@@ -39,9 +39,11 @@ export default function Navbar() {
             Preguntas Frecuentes
           </a>
 
-          <button className="ml-4 bg-[#05414D] text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
-            Inscripción
-          </button>
+          <Link href="/registro">
+            <button className="ml-4 bg-[#05414D] text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+              Inscripción
+            </button>
+          </Link>
 
           <Link href="/login">
             <button className="ml-2 p-2 rounded-full hover:bg-gray-100 transition">
@@ -52,7 +54,7 @@ export default function Navbar() {
                 height={20}
               />
             </button>
-</Link>
+          </Link>
         </div>
 
         {/* Mobile Button */}
