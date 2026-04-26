@@ -35,8 +35,11 @@ export default function Navbar() {
           <a href="#examen" className="text-gray-700 hover:text-[#1C9090] transition">
             Acerca del Examen
           </a>
+          <a href="#pricing" className="text-gray-700 hover:text-[#1C9090] transition">
+            Precio
+          </a>
           <a href="#faq" className="text-gray-700 hover:text-[#1C9090] transition">
-            Preguntas Frecuentes
+            FAQ
           </a>
 
           <Link href="/registro">
@@ -79,10 +82,13 @@ export default function Navbar() {
           <a href="#examen" className="block text-gray-700 hover:text-[#1C9090] transition">
             Acerca del Examen
           </a>
-          <a href="#faq" className="block text-gray-700 hover:text-[#1C9090] transition">
-            Preguntas Frecuentes
+          <a href="#pricing" className="text-gray-700 hover:text-[#1C9090] transition">
+            Precio
           </a>
-          <a href="#" className="block text-gray-700 hover:text-[#1C9090] transition">
+          <a href="#faq" className="block text-gray-700 hover:text-[#1C9090] transition">
+            FAQ
+          </a>
+          <a href="/registro" className="block text-gray-700 hover:text-[#1C9090] transition">
             Comprar
           </a>
 

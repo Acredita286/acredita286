@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="scroll-mt-24 w-full">
+    <section id="pricing" className="scroll-mt-24 w-full">
 
       <div className="relative w-full h-[400px] md:h-[600px]">
 
@@ -43,9 +44,13 @@ export default function Hero() {
             </p>
             
 
-            <button className="mt-6 w-full bg-[#05414D] text-white py-3 rounded-xl font-semibold hover:opacity-90 transition">
-              Comprar ahora
-            </button>
+            <Link href="/registro">
+              <button className="mt-6 w-full bg-[#05414D] text-white py-3 rounded-xl font-semibold hover:opacity-90 transition">
+                Comprar ahora
+              </button>
+            </Link>
+
+            
 
           </div>
 

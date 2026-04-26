@@ -45,9 +45,14 @@ export default function Hero() {
             ))}
           </ul>
 
-          <button className="mt-8 bg-[#05414D] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90">
+          <a
+            href="https://wa.me/5217293192896?text=Hola,%20me%20gustaria%20recibir%20más%20información%20sobre%20el%20curso%20Acredita286"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-block bg-[#05414D] text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90"
+          >
             Más información
-          </button>
+          </a>
         </div>
 
         {/* RIGHT - Imagen */}

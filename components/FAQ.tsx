@@ -42,7 +42,13 @@ export default function FAQFlip() {
             <span className="text-[#1C9090]">frecuentes</span>
         </h2>
         <p className="mt-4 text-lg text-gray-600 text-center leading-relaxed max-w-3xl mx-auto">
-            ¿Tienes alguna otra duda? Escribenos aqui.
+            ¿Tienes alguna otra duda? 
+            <a
+            href="https://wa.me/5217293192896?text=Hola,%20necesito%20más%20información%20sobre%20el%20curso%20Acredita286"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#1C9090]"
+            > Escribenos aqui.</a>
         </p>
         <br />
 

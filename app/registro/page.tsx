@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Registro() {
   const [form, setForm] = useState({
@@ -22,26 +23,33 @@ export default function Registro() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-b from-[#05414D]/10 to-[#1C9090]/10">
 
-  <div className="relative w-full max-w-4xl">
+  <div className="max-w-9xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  
+        <div className="flex justify-center">
+          <Image
+            src="/ImageInscripcion1.png"
+            alt="Curso online"
+            width={850}
+            height={850}
+            className="object-contain opacity-85"
+            priority
+          />
+        </div>
 
-    {/* Imagen*/}
-    <div className="absolute opacity-40 left-[-540px] top-1/2 -translate-y-1/2 z-0 hidden md:block">
-      <Image
-        src="/ImageRegistro1.png"
-        alt="Ilustración"
-        width={3000}
-        height={3000}
-        className="rounded-2xl object-cover"
-      />
-    </div>
+    {/* Formulario */}
+    <form
+      onSubmit={handleSubmit}
+      className="relative z-10 bg-white p-8 rounded-2xl shadow-lg w-full max-w-30xl ml-auto mt-4"
+    >
 
-    <div>
+      <div>
         <h2 className="relative text-5xl font-bold text-[#05414D] text-center">
             Inscripción
         </h2>
-        <p className="mt-4 text-lg text-center text-[#05414D] leading-relaxed max-w-3xl mx-auto">
+        <p className="mt-4 text-lg text-center text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Al finalizar su proceso de inscripción, usted contará con:
-        <ul className="text-lg text-center text-[#05414D] leading-relaxed max-w-3xl mx-auto">
+        </p>
+        <ul className="text-lg text-center leading-relaxed max-w-3xl mx-auto mb-4">
             <li>
                 Cursos y guías especializados.
             </li>
@@ -55,15 +63,8 @@ export default function Registro() {
                 El acceso a su plataforma de autoestudio es de 1 año, con garantía de acceso inmediato
             </li>
         </ul>
-        </p>
     </div>
-
-    {/* Formulario */}
-    <form
-      onSubmit={handleSubmit}
-      className="relative z-10 bg-white p-8 rounded-2xl shadow-lg w-full max-w-30xl ml-auto mt-4"
-    >
-
+     
       <input
         type="text"
         name="nombre"
@@ -129,6 +130,13 @@ export default function Registro() {
       <button className="w-full bg-[#05414D] mt-4 text-white py-3 rounded-lg font-semibold hover:opacity-90">
         Registrarme
       </button>
+
+      <Link href="/#">
+        <button className="w-full bg-[#1C9090] mt-4 text-white py-3 rounded-lg font-semibold hover:opacity-90 hover:opacity-90 transition">
+          Regresar a la pagina de Inicio
+        </button>
+      </Link>
+
 
     </form>
 
